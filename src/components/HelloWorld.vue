@@ -1,13 +1,30 @@
-<script setup>
-defineProps({
-  msg: {
-    // On peut assigner plus types : type: [String, Number];
-    type: String,
-    required: true
-    //On peut ajouter une valeur par défaut : 
-    // default : null
+<script>
+// defineProps({
+//   msg: {
+//     // On peut assigner plus types : type: [String, Number];
+//     type: String,
+//     required: true
+//     //On peut ajouter une valeur par défaut : 
+//     // default: null
+//   }
+// })
+
+export default {
+  name: "HelloWord", 
+  props : {
+    msg: {
+      type : [String, Number, Object], 
+      required: true, 
+      default: function () {
+        return null
+      }
+    }
+  }, 
+  data() {
+    return { count : 0 }
   }
-})
+}
+
 </script>
 
 <template>
@@ -20,6 +37,7 @@ defineProps({
     </h3>
   </div>
 </template>
+
 
 <style scoped>
 h1 {

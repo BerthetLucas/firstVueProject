@@ -1,8 +1,11 @@
 <script setup>
 defineProps({
   msg: {
+    // On peut assigner plus types : type: [String, Number];
     type: String,
     required: true
+    //On peut ajouter une valeur par défaut : 
+    // default : null
   }
 })
 </script>

@@ -8,7 +8,7 @@ import TheWelcome from './components/TheWelcome.vue'
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <hello-world msg="You did it !" />
     </div>
   </header>
 
@@ -18,6 +18,13 @@ import TheWelcome from './components/TheWelcome.vue'
 </template>
 
 <style scoped>
+
+/* On peut ajouter le scss dans la balise style en faissant : lang="scss" */
+/* Pour importer un fichier  css :  
+
+@import './assets/main.css'; */
+
+
 header {
   line-height: 1.5;
 }

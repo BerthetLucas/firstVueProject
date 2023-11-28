@@ -1,7 +1,4 @@
 <script>
-
-import SousComposant from './SousComposant.vue'; 
-
 // defineProps({
 //   msg: {
 //     // On peut assigner plus types : type: [String, Number];
@@ -13,40 +10,31 @@ import SousComposant from './SousComposant.vue';
 // })
 
 export default {
-  name: 'HelloWord',
+  name: 'SousComposant',
   props: {
     msg: {
-      type: [String, Number, Object],
+      type: String,
       required: true,
       default: function () {
-        return 'Coucou'
+        return 'Coucou je suis le sous composant'
       }
     },
-    visibility: {
-      type: Boolean,
-      required: false,
-      default: function () {
-        return true
-      }
-    },
+
     data() {
-      return { count: 0 }
+      return
     }
   }
 }
-
-
 </script>
 
 <template>
-  <div class="greetings">
-    <h1 class="green" v-if="visibility">{{ msg }}</h1>
-    <h3>
-      You’ve successfully created a project with
-      <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
-      <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
-    </h3>
-  </div>
+
+<p>
+    {{ msg }}
+</p>
+
+
+
 </template>
 
 <style scoped>

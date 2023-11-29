@@ -52,10 +52,10 @@ export default {
 </script>
 
 <template>
-  <div class="btn-container">
+  <div class="btn-container h-[50vh]">
     <button @click="incrementation">{{ text }}</button>
     <p class="number">{{ chiffre }}</p>
-    <p class="success-container">{{ success }}</p>
+    <p class="success-container mb-12">{{ success }}</p>
   </div>
 </template>
 
